@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm text-center md:text-left">
-            &copy; {currentYear} Kriyo Tek. All Rights Reserved.
+            &copy; {currentYear} Kriyo Tek teams. All Rights Reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Privacy Policy</a>

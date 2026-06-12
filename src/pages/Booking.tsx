@@ -121,7 +121,7 @@ export default function Booking() {
 
   const selectedRoomType = form.watch("roomType");
   const pricePerMonth = roomPrices[selectedRoomType] ?? 12500;
-  const advancePayment = 1;
+  const advancePayment = 5000;
   const bookingTime = new Date().toLocaleString();
 
   useEffect(() => {
@@ -305,12 +305,12 @@ export default function Booking() {
                             <FormItem>
                               <FormLabel>Expected Check-in Date</FormLabel>
                               <FormControl>
-                                <Input
-                                  data-testid="input-checkin-date"
-                                  type="date"
-                                  {...field}
-                                  className="bg-background/50 border-input block w-full"
-                                />
+                              <Input
+  data-testid="input-checkin-date"
+  type="date"
+  {...field}
+  className="bg-background/50 border-input block w-full text-white [&::-webkit-calendar-picker-indicator]:invert"
+/>
                               </FormControl>
                               <FormMessage />
                             </FormItem>
